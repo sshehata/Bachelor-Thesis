@@ -1,0 +1,278 @@
+\documentclass[12pt, a4paper, fleqn]{memoir}%makeidx
+\usepackage{lmodern}
+
+%******************************************************************************
+% STYLE
+%******************************************************************************
+\input{style.tex}
+
+%******************************************************************************
+% BEGIN DOCUMENT
+%******************************************************************************
+\begin{document}
+
+%******************************************************************************
+% FRONT MATTER
+%******************************************************************************
+\frontmatter
+
+%******************************************************************************
+% EMPTY PAGE
+%******************************************************************************
+\pagestyle{empty}
+This is actually the first page of the thesis and will be discarded after the print out. This is done because 
+the title page has to be an even page. The memoir style package used by this template makes different indentations 
+for odd and even pages which is usally done for better readability.  
+\clearpage
+%******************************************************************************
+% TITLE PAGE
+%******************************************************************************
+\pagestyle{empty}
+\rmfamily
+\noindent
+\begin{center}
+University of Augsburg\\
+Faculty of Applied Computer Science\\
+Department of Computer Science\\
+Master's Program in Computer Science\\
+\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.25\textwidth]{logo.png}
+\end{figure}
+\vfill\vfill
+\begin{center}
+\Large
+Master's Thesis\\
+\end{center}
+\vspace{2.0em}
+\begin{center}
+\Large
+\LARGE Brief Title\\ \vspace{10pt} 
+\Large Full Title of the Thesis
+\end{center}
+\vspace{2.0em}
+\begin{center}
+    \normalsize
+    submitted by\\
+    \large
+    Forename Surname\\
+    \normalsize
+    on 31.02.2010
+\end{center}
+\vspace{2.0em}
+\begin{center}
+    \normalsize
+    Supervisor:\\ 
+    Prof. Dr. Elisabeth Andr\'{e} aus Augsburg
+\end{center}
+\begin{center}
+    \normalsize
+    Adviser:\\
+    Title Forename Surname
+\end{center}
+\begin{center}
+    \normalsize
+    Reviewers:\\
+    Prof. Dr. Elisabeth Andr\'{e}\\
+    Prof. Dr. Elisabeth Andr\'{e}\\
+\end{center}
+\cleardoublepage
+
+%******************************************************************************
+% DEDICATION
+%******************************************************************************
+\vspace*{\fill}
+{\hfill\sffamily\itshape} You can write a dedication here, but never more than a single line. 
+\cleardoublepage
+
+%******************************************************************************
+% ABSTRACT
+%******************************************************************************
+\chapter*{Abstract}
+% TODO: add an opening statement
+This paper aims at investigating the use of EEG signals in classifing a user's emotional state, as a first step of integrating into the SSI framework. The data corpus used is taken from the DEAP and used to solve four different binary classification problems relating to affectional state. First, different approaches for feature extraction and selection were researched, among those, the method of calculating the PSD (Power Spectrum Denisty), based on the FFT,  was found to be the most widely used. This is due to the simplicity of implementation and the efficincy of using the resulted features for classification. Other, more complex methods, were used and then discarded as they seemed to offer no advantage in terms of classification accuracy. For classification, three standard classifier were tested for cross comparing accuracy as well as comparison with the classification results reported by pervious similar works with the DEAP. The tests consisited of two experiments, the first experiment used the data for each subject separatly for classification, before calculating the average classification accuracy over all subjects. This shows the expected rate of correct classification for a single user. The second experiment included the entire data of all subjects as a single coprus for classification. This is to demonsterate the generability of an EEG classifier for many users with different EEG patterns.Finally, a new classifier, previously proposed in the litereture for use in EEG classification, was implemented and tested, using the previous experiments, on the same data. The end of this paper reports a comparison between the resulting accuraccies of theses classifications as well as future recommendations for further improvements. 
+
+% This is the place where the \textit{abstract} of your thesis is supposed to be. The abstract is an essential part of a thesis, providing a brief summary of the thesis. Students often do not recognise the importance of the abstract and thus do not spend the required time in order to produce a well defined abstract. You should realize that the abstract is the walking advertisement for your thesis. Any reader's interest in your work stands or falls with the motivation provided by your abstract. A student should know that usually the reviewer of his or her thesis start reading with the abstract and the summary while often just making quick scans over some parts of the main chapters. An abstract is what will and has to be remembered.
+
+%******************************************************************************
+% ACKNOWLEDGMENTS
+%******************************************************************************
+\chapter*{Acknowledgments}
+Acknowledgements writing allows an author to tell some words of gratitude to those, who turned out to be rather helpful during your thesis writing process. Of course, acknowledgements are not an integral part of a thesis and if you did all your work on your own, you can omit this part. Writing acknowledgements is not obligatory.
+
+%******************************************************************************
+% STATEMENT & DECLARATION
+%******************************************************************************
+\chapter*{Statement and Declaration of Consent}
+\vfill
+\subsubsection*{\LARGE Statement}
+Hereby I confirm that this thesis is my own work and that I have documented all sources used.
+\vfill
+\begin{flushleft}
+Max Mustermann
+\end{flushleft}  
+\begin{flushright}
+Augsburg, 00.00.0000 
+\end{flushright}
+\vfill
+\vfill
+\subsubsection*{\LARGE Declaration of Consent}
+Herewith I agree that my thesis will be made available through the library of the Computer Science Department.
+\vfill
+\begin{flushleft}
+Max Mustermann
+\end{flushleft}  
+\begin{flushright}
+Augsburg, 00.00.0000 
+\end{flushright}
+\vfill
+
+%******************************************************************************
+% TABLE OF CONTENTS
+%******************************************************************************
+\cleardoublepage
+\rmfamily
+\normalfont
+\pagenumbering{roman}
+\pagestyle{headings}
+\tableofcontents
+
+
+%******************************************************************************
+% MAIN MATTER
+%******************************************************************************
+\mainmatter
+
+%##########################################################
+\chapter{Introduction}
+\label{chap:Introduction}
+
+\section{Motivation}
+\label{sec:Motivation}
+
+\section{Objectives}
+\label{sec:Objectives}
+
+\section{Outline}
+\label{sec:Outline}
+
+%##########################################################
+\chapter{Theoretical Background}
+\label{chap:TheoreticalBackground}
+
+\section{Entenhausen}
+\label{sec:Entenhausen}
+Figure \ref{fig:intro} shows an image while you can cite a paper with \cite{AmirPnueli1985} or several papers with \cite{ThomasRist2004, Rist2002}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{enten.jpg}
+\caption{The map of Entenhausen}
+\label{fig:intro}
+\end{figure}
+
+\section{Section}
+\label{sec:Section}
+
+\subsection{PseudoCode}
+\label{sec:PseudoCode}
+If you want to show the implementation of some algorithm that is essential to the solution found in your thesis then do not write plain prgoram code. Use an abstract pseudocode representation instead. No one wants to see \texttt{C++\texttrademark} code or \texttt{Java\texttrademark} code in your thesis because it is presumed that you are able so write such a program as a computer scientist. Generally, writing program code is bad style and just blows up your thesis but will never be read by anyone but you. It is nothing scientific but your handwork while your thesis should show that you are able to do research as a scientist. A pseudocode example could look like the following:
+\begin{algorithm}[h]
+\caption{The Dekker Algorithm}
+\label{algo:dekker}
+\begin{algorithmic}
+\Require $n \in \mathbb{N}$
+\Require $0 \leq i,turn \leq n$
+\Require $\forall 0 \leq j \leq n : (interrested[j] = false)$
+\Procedure{DekkerAlgorithm}{$n,i$}
+  \State $interrested[i] \leftarrow true$
+  \While {$\exists 0 \leq j \leq n : (j \neq i \wedge interrested[j] = true)$}
+  \If {$turn \neq i$}
+    \State $interrested[i] \leftarrow false$
+    \While {$turn \neq i$}
+    \EndWhile
+    \State $interrested[i] \leftarrow true$
+  \EndIf 
+  \EndWhile
+  \State $ $
+  \State $\text{\textbf{\color{red}CRITICAL SECTION}}$
+  \State $ $
+  \State $turn \leftarrow Random(n)$
+  \State $interrested[i] \leftarrow false$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+Be sure that each pseudocode listing is listed in the list of algorithms at the end of your thesis.
+
+%******************************************************************************
+% BIBLIOGRAPHY
+%******************************************************************************
+\bibliographystyle{plain}
+{\small\bibliography{master}}
+
+%******************************************************************************
+% APPENDIX
+%******************************************************************************
+\appendix
+\appendixpage*
+\chapter{First Appendix}
+\label{app:FirstAppendix}
+This is the place where the appendices are supposed to be. Appendices are everything that would just blow up your thesis but are still of some interrest for a reader that wants to get a deeper grasp on the details of your work.
+
+%******************************************************************************
+% BACK MATTER
+%******************************************************************************
+\backmatter
+
+%******************************************************************************
+% LIST OF SYMBOLS
+%******************************************************************************
+%\normalfont
+%\clearpage
+%\chapter[List of Symbols and Abbreviations]{List of Symbols and Abbreviations}
+%\begin{center}
+%\small
+%\begin{longtable}{lp{3.0in}c}
+%\toprule
+%\multicolumn{1}{c}{Abbreviation} & \multicolumn{1}{c}{Description}\\ \midrule\addlinespace[2pt] \endhead
+%\bottomrule\endfoot
+%XML & E\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage \\
+%XSD & \textbf{X}ML-\textbf{S}chema-\textbf{D}efinition \\
+%SFXML & \textbf{S}cene\textbf{F}low E\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage \\
+%SFTXL & \textbf{S}cene\textbf{F}low \textbf{T}extual E\textbf{X}pression \textbf{L}anguage \\
+%SCXML & \textbf{S}tate\textbf{C}hart E\textbf{X}tensible \textbf{M}arkup \textbf{L}anguage \\
+%DOM & \textbf{D}ocument \textbf{O}bject \textbf{M}odel \\
+%LR & \textbf{L}eft to \textbf{R}ightmost derivation \\
+%LALR & \textbf{L}ook\textbf{A}head LR\\
+%NPC & \textbf{N}on-\textbf{P}erson-\textbf{C}haracter\\
+%ABL & \textbf{A} \textbf{B}ehavior \textbf{L}anguage\\
+%\end{longtable}
+%\end{center}
+
+%******************************************************************************
+% LIST OF FIGURES
+%******************************************************************************
+\normalfont
+\clearpage
+\listoffigures
+
+%******************************************************************************
+% LIST OF TABLES
+%******************************************************************************
+\normalfont
+\clearpage
+\listoftables
+
+%******************************************************************************
+% LIST OF ALGORITHMS
+%******************************************************************************
+%\normalfont
+\clearpage
+\listofalgorithms
+
+%******************************************************************************
+% END DOCUMENT
+%******************************************************************************
+\end{document}

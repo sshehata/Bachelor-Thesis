@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{AmirPnueli1985}
+David Harel {and}~Amir Pnueli.
+\newblock On the development of reactive systems.
+\newblock In {\em Logics and Models of Concurrent Systems}, volume~13 of {\em
+  Nato Asi Series F: Computer And Systems Sciences}, pages 477--498, New York,
+  NY, USA, 1985. Springer-Verlag New York, Inc.
+
+\bibitem{ThomasRist2004}
+Elisabeth Andre {and}~Thomas Rist.
+\newblock {\em Cooperative Information Agents IV - The Future of Information
+  Agents in Cyberspace}, volume 1860 of {\em Lecture Notes in Computer
+  Science}, chapter Adding Life-Like Synthetic Characters to the Web, pages
+  51--89.
+\newblock Springer Berlin, Heidelberg, February 2004.
+
+\bibitem{Rist2002}
+Thomas Rist, Stephan Baldes, Patrick Gebhard, Michael Kipp, Martin Klesen,
+  Peter Rist, and Markus Schmitt.
+\newblock Crosstalk: An interactive installation with animated presentation
+  agents.
+\newblock In {\em COSIGN '02: Proceedings of the 2th Conference on
+  Computational Semiotics for Games and New Media}, Augsburg, 2002.
+
+\end{thebibliography}
