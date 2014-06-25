@@ -1,26 +1,84 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{AmirPnueli1985}
-David Harel {and}~Amir Pnueli.
-\newblock On the development of reactive systems.
-\newblock In {\em Logics and Models of Concurrent Systems}, volume~13 of {\em
-  Nato Asi Series F: Computer And Systems Sciences}, pages 477--498, New York,
-  NY, USA, 1985. Springer-Verlag New York, Inc.
+\bibitem{cowie2001emotion}
+Roddy Cowie, Ellen Douglas-Cowie, Nicolas Tsapatsoulis, George Votsis, Stefanos
+  Kollias, Winfried Fellenz, and John~G Taylor.
+\newblock Emotion recognition in human-computer interaction.
+\newblock {\em Signal Processing Magazine, IEEE}, 18(1):32--80, 2001.
 
-\bibitem{ThomasRist2004}
-Elisabeth Andre {and}~Thomas Rist.
-\newblock {\em Cooperative Information Agents IV - The Future of Information
-  Agents in Cyberspace}, volume 1860 of {\em Lecture Notes in Computer
-  Science}, chapter Adding Life-Like Synthetic Characters to the Web, pages
-  51--89.
-\newblock Springer Berlin, Heidelberg, February 2004.
+\bibitem{disatnik2007shrinking}
+David~J Disatnik and Simon Benninga.
+\newblock Shrinking the covariance matrix.
+\newblock {\em The Journal of Portfolio Management}, 33(4):55--63, 2007.
 
-\bibitem{Rist2002}
-Thomas Rist, Stephan Baldes, Patrick Gebhard, Michael Kipp, Martin Klesen,
-  Peter Rist, and Markus Schmitt.
-\newblock Crosstalk: An interactive installation with animated presentation
-  agents.
-\newblock In {\em COSIGN '02: Proceedings of the 2th Conference on
-  Computational Semiotics for Games and New Media}, Augsburg, 2002.
+\bibitem{du2004temporal}
+Sijiang Du and Marko Vuskovic.
+\newblock Temporal vs. spectral approach to feature extraction from prehensile
+  emg signals.
+\newblock In {\em Information Reuse and Integration, 2004. IRI 2004.
+  Proceedings of the 2004 IEEE International Conference on}, pages 344--350.
+  IEEE, 2004.
+
+\bibitem{fisher1936use}
+Ronald~A Fisher.
+\newblock The use of multiple measurements in taxonomic problems.
+\newblock {\em Annals of eugenics}, 7(2):179--188, 1936.
+
+\bibitem{john1996digital}
+G~Proakis John and G~Manolakis Dimitris.
+\newblock Digital signal processing: Principles, algorithms and applications,
+  1996.
+
+\bibitem{koelstra2012deap}
+Sander Koelstra, Christian Muhl, Mohammad Soleymani, Jong-Seok Lee, Ashkan
+  Yazdani, Touradj Ebrahimi, Thierry Pun, Anton Nijholt, and Ioannis Patras.
+\newblock Deap: A database for emotion analysis; using physiological signals.
+\newblock {\em Affective Computing, IEEE Transactions on}, 3(1):18--31, 2012.
+
+\bibitem{ledoit2004honey}
+Olivier Ledoit and Michael Wolf.
+\newblock Honey, i shrunk the sample covariance matrix.
+\newblock {\em The Journal of Portfolio Management}, 30(4):110--119, 2004.
+
+\bibitem{lotte2007review}
+Fabien Lotte, Marco Congedo, Anatole L{\'e}cuyer, Fabrice Lamarche, Bruno
+  Arnaldi, et~al.
+\newblock A review of classification algorithms for eeg-based brain--computer
+  interfaces.
+\newblock {\em Journal of neural engineering}, 4, 2007.
+
+\bibitem{millan2000local}
+Jose del~R Millan, Josep Mourino, Fabio Babiloni, Febo Cincotti, Markus Varsta,
+  and Jukka Heikkonen.
+\newblock Local neural classifier for eeg-based recognition of mental tasks.
+\newblock In {\em Neural Networks, IEEE-INNS-ENNS International Joint
+  Conference on}, volume~3, pages 3632--3632. IEEE Computer Society, 2000.
+
+\bibitem{pardey1996review}
+James Pardey, Stephen Roberts, and Lionel Tarassenko.
+\newblock A review of parametric modelling techniques for eeg analysis.
+\newblock {\em Medical engineering \& physics}, 18(1):2--11, 1996.
+
+\bibitem{picard1999affective}
+Rosalind~W Picard.
+\newblock Affective computing for hci.
+\newblock In {\em HCI (1)}, pages 829--833, 1999.
+
+\bibitem{picard2003affective}
+Rosalind~W Picard.
+\newblock Affective computing: challenges.
+\newblock {\em International Journal of Human-Computer Studies}, 59(1):55--64,
+  2003.
+
+\bibitem{tao2005affective}
+Jianhua Tao and Tieniu Tan.
+\newblock Affective computing: A review.
+\newblock In {\em Affective computing and intelligent interaction}, pages
+  981--995. Springer, 2005.
+
+\bibitem{teplan2002fundamentals}
+Michal Teplan.
+\newblock Fundamentals of eeg measurement.
+\newblock {\em Measurement science review}, 2(2):1--11, 2002.
 
 \end{thebibliography}

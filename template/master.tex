@@ -1,10 +1,12 @@
 \documentclass[12pt, a4paper, fleqn]{memoir}%makeidx
 \usepackage{lmodern}
+\usepackage{chngcntr}
 
 %******************************************************************************
 % STYLE
 %******************************************************************************
 \input{style.tex}
+\counterwithout{table}{chapter}
 
 %******************************************************************************
 % BEGIN DOCUMENT
@@ -98,6 +100,7 @@ This paper aims at investigating the use of EEG signals in classifing a user's e
 %******************************************************************************
 % ACKNOWLEDGMENTS
 %******************************************************************************
+
 \chapter*{Acknowledgments}
 Acknowledgements writing allows an author to tell some words of gratitude to those, who turned out to be rather helpful during your thesis writing process. Of course, acknowledgements are not an integral part of a thesis and if you did all your work on your own, you can omit this part. Writing acknowledgements is not obligatory.
 
@@ -147,33 +150,39 @@ Augsburg, 00.00.0000
 %##########################################################
 \chapter{Introduction}
 \label{chap:Introduction}
+Affective computing is one of the rapidly growing fields of research in the disciplines of computer science, cognitive, psychology and physiology\cite{tao2005affective}. It aims at expanding computers with the human like ability of dealing with emotions. This envolves a two sided effort, for one a computer needs to be able to gather information about the user's emotional state. This needs to be done implicitly, without the user needing to excplicitly specifiy his current state. A computer must learn to process this information and adabt appropriately to the current emotional state. On the other side, affective computing can also impue computers, and machines in general, with ability to portray or simulate emotions and emotional responses\cite{picard2003affective, picard1999affective}. 
 
+While not all machines would benefit from such capabilities, many situations would be improved by making the machine simulate a human agent in being able to naturally adabt to the situation\cite{picard1999affective}. At the spear head of such application is human-computer interaction, which can be made much easier and more natural when an implicit channel of emotional information is introduced between the user and the machine. This is analagous to the large amount of information passed to and from a person in human-human interaction, simply through voice tones, facial expressions and body language\cite{cowie2001emotion}. For example, a computer able to detect a user's frusteration towards a certain GUI feature, can perhaps modify itself to be more suitable to the user's need, or simply offer a human like response to alleviate their frusteration such as an apology or an explanation. Other application that would benefit from affective computing include data gathering for psychological research, such as collecting data on frustrationg expressions, development of tools for training of social-emotional skills and building service robots able to interact with people in a nursing or shopkeeping capacity\cite{picard1999affective}.
+
+Modern Medecine uses a variety of techniques to capture and record different activities of the human body. One of those techniques, known as Electroencephalography (EEG), has undergone massive progress in recent years. The current procedure of EEG entails the use of electric conductive electrodes to detect electical activity produced by the brain. When a large number of brain cells are activated (synaptic excitation), a local current flow is produced which can cause weak electrical signals to manifest on the scalp. Once these signals are captured by the electrodes, they can be displayed on paper, or recorded to computer memory for further processing. Electroencephalographic reading can be done in two ways, called invasive and non-invasive procedures. The invasive form requires a surgical procedure to implant electrodes directly on the surface of the brain (subdural EEG) or withen the substance of the brain (depth EEG). In the non-invasive EEG procedure, electrodes are placed over the subjects scalp without the need for surgery or incesion. While the non-invasive procedure requires more sensitive sensor and is more prune to noise and interference, it is much more practical than the invasive counter part. It can be applied many times to both adults and children without any risk of injury or brain damage\cite{teplan2002fundamentals}. For the purpose of this study, the term EEG will always refer to signals recorded by a non invasive procedure.
+
+EEG signal recording has its long established uses in the fields of neurology and clinical neurophysiology. This is due its ability to reflect both normal and abnormal brain activity. It can also record the brain response to a stimuli withen fractions of a second of its occurance. This leads to a long list of applications including monitering brain alertness, coma, brain death and certain brain disorders such as epilepsy. However, recently, more focus has been given to the specific problem of computer classification of EEG signals using techniques such as machine learning. The main goal behind such research is the developement of Brain Computer Interfaces (BCIs)r These interfaces allow users to communicate simple commands to different machinery using nothing but brain singals. This can be invaliable to a disabled person with no motor skills (such as patients with spinal cord injury). EEG signal classification has aslo been used in the verfication of theoratical hypotheses regarding the inner workings of the brain. Despite the major advances made in the field, however, there has been little attention given to use of EEG signals in determining the emotional state of a subject. This contribution aims at using new as well as previously developed techniques of EEG signal classification into affectional state detection (determining the emotional state of the user). 
 \section{Motivation}
 \label{sec:Motivation}
-
+This work is part of an ongoing effort to develop a framework, called the SSI (Social Signal Intrepretation) for the recognition, analysis and recording of human behaviour. Here, we attempt to expand on the existing components by adding an extra channel of sensors for capturing EEG signal and using the new input for intrepreting the affective state of the subject. The framework, including this contribution, is expected to benefit many applications, such as the use of humanoid avatars where advanced human computer interaction is required. It can also be used for studies regarding human pschology and emotional behaviours.
 \section{Objectives}
 \label{sec:Objectives}
-
+This study aims at investigating the use of EEG signals for determining the emotional state of a subject. It uses popular machine learning techniques as well as newly developed algorithms for the recognition of affective state. The data used for the study is the DEAP dataset, the first dataset to reconize the physiological state as well as the self reported emotional response to certain music videos. 
 \section{Outline}
 \label{sec:Outline}
+This study is divided into six chapters: introduction, dataset and preprocessing, feature extraction, classification, experimental results and a summary. This chapters are organised in the same order as what is normally the natural flow of machine learning problem. The fifth chapter, experimental results, reports the classification accuracies achieved in two expirements that were done during the course of the study and compares these results with previous experiments done with the same dataset. All implementations and experiments where done in matlab using the AuBT$^{*}$ (Augsburg Biosignal Toolbox).
 
 %##########################################################
 \chapter{Theoretical Background}
-\label{chap:TheoreticalBackground}
+\label{chap:TheoraticalBackground}
 
-\section{Entenhausen}
-\label{sec:Entenhausen}
-Figure \ref{fig:intro} shows an image while you can cite a paper with \cite{AmirPnueli1985} or several papers with \cite{ThomasRist2004, Rist2002}.
+\section{Electroencephalography}
+\label{sec:Electroencephalography}
+The discovery of electroencephalography was first made in 1875 by english physician, Richard Caton, who reported measuring what he described as ``feeble currents of varying directions'' from the exposed brains of rats and monkeys. The non-invasive procedure was then introduced by Hans Berger, a german neurologist, in 1924 who used ordinary radio equipement to amplify electrical activity produced by the brain on the human scalp. He used a strip of paper to show that EEG can be visually inspected without the need to open the skull.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{enten.jpg}
-\caption{The map of Entenhausen}
-\label{fig:intro}
-\end{figure}
+Potential Difference is formed in brain neurons with the flow of Ca$^{++}$, K$^{+}$, Na$^{+}$ and Cl$^{-}$ -ions through membrane channels. The potential difference can either exceed a threshold making it an action potential or be subthreshold as postsynaptic potentials (PSPs). Action potentials are spike shaped with duration of 1 ms that when responding to stimuli that exceed a certain threshold, causes the neuron to fire. When action potentials reach a synapse, a connection between the firing neuron and other neurons, it forms a PSP with amplitude relative to the excitation of the input neuron. PSPs have typical amplitudes ranging from 5-10mV and spans between 10 and 50 ms. These potentials propagate throughout the brain neurons in same way. When that number of firing neurons causes a large enough PSP, extracranial electric field is formed. The contribution of action potentials to this field is negligible. The superimposiotion of postsynaptic potentials detected is known as EEG.
 
-\section{Section}
-\label{sec:Section}
+EEG is recorded by means of conductive electrodes placed on the scalp. Conductive paste and low resistance electrode can be used to boost recording quality. The need to interpet single recordings well as compare results call for standardized placement of electrods. In 1958, a standard for electrode placement was introduced, called 10-20 electrode placement system. Using propertional distance from skull landmarks, the 10-20 system provides adequate coverage of the entire scalp. The name 10-20 stands for the percentage of distance between the ears and nose where electrode positions where chosen. Each electrode position is given a label based on the closest brain area: (F)rontal, (C)entral, (T)emporal, (P)osterior and (O)ccipital. On the left side of the brain, from the subjects perspective, labels are accompanied by an odd number and an even number on the right side.
+
+The dedicated research effort behind EEG measurement is motivated by the very wide spectrum of applications it offers. EEG holds an advantage over other brain monitering techinques which is speed, since it allows the recording of a stimuli reponse withen fractions of a second of its occurance. Clinical applications include anaethesia, testing for drug effects, examining the brain for tumers or strokes and monitering patients with coma or brain death. Certain variation of EEG signals can be used for specific applications. For example, evoked potentials can be used for cognitive related studies. Quantitative electronecephalography, the use of multi channel measurements of EEG, is typically used for topographics brain mappings. A popular application which has gained attention recently is Brain Computer Interfaces (BCI), which are computer interfaces designed to translate EEG signal of a user into a single command from a preprogrammed set. This allows users with no little or no mobility, such as patients with neck-down-paralysis, to control daily objects with nothing but brain commands.
+
+\section{Affective Computing}
+\label{sec:Affective}
 
 \subsection{PseudoCode}
 \label{sec:PseudoCode}
@@ -206,6 +215,194 @@ If you want to show the implementation of some algorithm that is essential to th
 
 Be sure that each pseudocode listing is listed in the list of algorithms at the end of your thesis.
 
+
+\chapter{Data Used}
+\label{chap:dataset}
+
+\section{Dataset Source and Construction}
+\label{sec:DatasetSource}
+The continued research in the field of emotion recognition has called for the creation of many databases containing emotional information. This databases cover many different modalities such as facial expressions, body gestures and speech for visual and audio modalities. The dataset used for this study is a database called, DEAP (Database fro Emotional Analysis using Physiological signals), that was first presented in 2012. It holds physiological recordings, including EEG signals, and facial expressions of several subjects while watching musical videos as emotional stimuli. The database also holds the rating of the subjects for each video with regards to: arousal, valence, dominance, liking and familiarity\cite{koelstra2012deap}.
+
+Following is a summary of the procedure that went into the creation of the database\footnote{For more details the reader is refered to \cite{koelstra2012deap}}. It started with 120 musical videos, half of which were selected automatically and the rest manually. To ensure diversity, the manually selected videos were chosen such that each 15 videos belonged to a different quadrant in the valence/arousal space (LALV, LAHV, HAHV, HALV). Then for each video, a one minute highlight segement was extracted automatically through a linear regression method used in \cite{soleymani2008bayesian} to maximize the emotional content. An online subjective emtion assessment interface allowed users to evaluate the videos for arousal and valence. The final 40 videos were selected from the ones having the highest rating in terms of valence/arousal. These videos were viewed, in random order, by 32 subjects while their physiological state was recorded. For 22 subjects, facial expressions were also recorded. For each video, the subject provided a self assessment of their emotional state using self-assessment manikins (SAMs) interms of valence, arousal, dominance and liking\cite{koelstra2012deap}.
+
+\section{Recorded Signals and Preprocessing}
+\label{sec:preprocessing}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{pic.png}
+	\caption{The 10/20 placement of electrodes from the DEAP dataset}
+	\label{fig:eeg}
+\end{figure}
+
+The DEAP dataset was selected for its abundance in physiological information. The database holds recordings of 40 physiological signals, of which 32 are EEG channels. Figure \ref{fig:eeg} shows the 32 EEG channels including and their positions on the scalp. The label of each channel and position are defined by the 10 - 20 system. While other physiological signals are included in the database, only EEG signals are considered in this study. As well as, the many data channels, the database large number of subjects is a big advantage. As it has been noted that EEG signal patterns vary greatly among different individuals, the presence of data from that many subjects allow for testing emotional recognition techniques for generalizability and accommodation of diversity.The database also provides preprocessed versions of the raw data to allow for a quick implement-and-test approach. Preprocessing used included downsampling from the original 512Hz to 128Hz, removal of EOG artefacts, bandpass frequency filtering between 4.0hz and 45.0hz and averaging the data to the common reference.
+
+\chapter{Feature Extraction}
+\label{chap:FeatureExtraction}
+
+\section{Challenges and Typical Approaches}
+\label{sec:CommonMethods}
+Feature extraction is usually the first step in a classification problem. It is also the most crucial step as classification accuracy is naturally dependent on the quality of features used. This means that features need to be informative, discriminative between classes and descriptive of each class. The difficulty in feature extraction lies in the nature of an EEG signal which challanges most of the standard feature extraction techinques. The first complication that can be observed in an EEG signals is the signal-to-noise ratio since they tend to be very noise with large number of outliers. Second, EEGs are non stationary signals and experience sharp variation over time. This makes time related information, while essential to the recognitio of stimuli related changes, very difficult to extract. Also, EEG classification lends itself easily to the curse of dimensioniality and overfitting. This is caused by the large number of features extracted from multi channel sensor recordings that are later combined into one feature vector. Adding to the problem, is the small size of the datasets available for training\cite{lotte2007review}.
+
+Many techniques have been developed in order to improve the quality of extracted features. Commonly used, are the parametric methods such as the autoregressive(AR) and the adaptive autoregressive(AAR). These methods assume that the signal follows a mathematical model, where its exact form is determined by estimating values for its free cooefficents. The difference between the adaptive and the non-adaptive method is that an adaptive model is updated for each new sample\cite{pardey1996review}. Other features include time frequency features, inverse model features and Band Powers(BP). Selected for this study, is the Power Spectrum Density (PSD) method which was found to be most popular in the review literature.
+
+\section{Power Spectral Density}
+\label{sec:psd}
+The Power Spectrum Density (PSD) approach has been shown to outperform most other feature extraction techniques\cite{du2004temporal}. That and the simplicity of implementation are the reasons for choosing it as the feature extraction method. The process of calculating the power spectrum density is know as spectral power estimitaion. It means determining the power of the signal at each of several frequency bands. This splits the raw EEG signal into several much more informative values. Spectral estimitation can be done in two ways. One is to apply a bandpass filter with the required bandwidth to the signal. The calculated power of the output signal divided by the bandwidth of the filter is the spectral density for that particular band. While straight forward, this approach is impractical for situations with prerecorded digitized signals or in the case of considering a large number of frequency bands. Several other approaches exist and split into two groups, parametric and non-parametric methods\cite{stoica2005spectra}.
+
+The parametric approach requires a model be fitted to the data. That is to say that the parametric approach requires the assumption that the signal is produced by linear system driven by white noise. In the cases where the data truly follows the fitted model, the parametric approach can provide more accurate results. In other cases, however, this approach is quite sensitive to misspecification. In the non-parametric approach, the PSD is estimated directly from the signal. The most basic of the non-parametric methods is the Peridogram. This method uses the discrete-time fourier transform of the signal, using the Fast Fourier Transform (FFT). The PSD in this case is the appropraitly scaled magnitude squared of the result.
+For a signal of L samples, the periodogram is
+$$P_{xx}=\frac{1}{LF_s}|\sum_{n=0}^{L-1}x_L^{(n)e^{\frac{-j2\pi fn}{F_s}}}|^{2}$$
+Where $F_s$ is the sampling frequency.
+The method used here is a variation of the periodogram, known as the Welch Periodogram. Instead of calculating a periodogram for the whole signal, the signal is first divided into segments that and then a periodogram is calculated for each segment separatly. The results are then averaged to calcualte the final PSD. This reduces variation and provides a smoother periodogram\cite{john1996digital}.
+
+\section{Extracted Features}
+\label{sec:ExtractedFeatures}
+Spectral density estimation was applied to each channel of EEG sparatly. The frequency bands considered are standard wave patterns that have been observed to give strong indications of brain state. These are six frequency bands that are part of the standard EEG nomenclature. Each of these bands have been shown to have strong corelation with a specific change in the mental state of the subject. They are the following:\\
+\\
+\textbf{Delta Waves} Frequency range lies between 0.1 and 4 Hz. It is clearly observed during episodes of deep sleep, known as slow-wave sleep, with large amplitudes, commonly between 75 and 200 $\mu V$.\\
+\\
+\textbf{Theta Waves} These are more commonly observed in children, and are rare in case of adults. They have tied to states of light sleep or meditation. Its frequency range is between 4 and 8 Hz.\\
+\\
+\textbf{Alpha Waves} These waves mostly originate in the postorior part of the brain. They are observed during alertness of the brain. They can be more easily seen with the eyes closed. It was observed that alpha waves are slightly blocked by mental effort or spiked attention. Frequency range lies between 8 and 12 Hz.\\
+\\
+\textbf{Slow Alpha Waves} Also known as the alpha delta waves, they are a special type of alpha waves. Their frequency range is restricted between 8 and 10 Hz and are dominant in the anterior-posterior gradient.\\
+\\
+\textbf{Beta Waves} With a much wider frequency than other waves, between 12 and 30 Hz, their spikes are related to increased attention, alertness and focus. Beta waves are supressed right before and during physical motions.\\
+\\
+\textbf{Gamma Waves} Frequency range is above 30 Hz but rarily exceeds 45 Hz. Gamma waves are associated with higher mental functions, specifically the processing of information and voluntary movements.\\
+\\
+The power values of these six frequecy bands were calculated for each of the 32 recorded channel and then concatenated into a single feature vector. This give a feature vector of 192 features.
+
+Other than the power spectral density, spectral asymmetry was also used as features. Spectral power asymmetry is defined as the difference in power between the channels on the left and right hemispheres of the brain. That is to say that for each sensor channel on the right brain hemisphere, the crossponding symmetrical channel on the left hemisphere is idendified. Then the power of the signals coming from both sensors is subtracted from each other. This is known as their spectral asymmetry and is calculated for each of the above mentioned frequency bands. Spectral asymmetry has been shown to be effective features in the recognition of certain mental disorders and tumors. With 14 symmetrical channels present in the data, the number of added features is 84 which extends the feature vector to 276 total features.
+
+\section{Feature Selection}
+\label{sec:FeatureSelection}
+Following feature extraction, feature selection is applied. Feature selection is the process of selecting a subset of the available features to be actually used in classification. There are several benefits to feature selection. First, it can eliminate noisy features which merely confuse the classifier. It can improve the efficency of classification by reducing storage space and training time.It can also remove features that non discriminative between classes making them ineffectual to classification. Feature selection can greatly reduce the effect of the curse of dimensioniality. This can be very important in EEG classification due to the normally small datasets. Many algorithms exist for feature selection. The method used here is called the Analysis of Variance (ANOVA). This a statistical method commonly used to investigate the relations between a sample and the data. Here, it shows the contribution of each feature to the overall variance of the data. This allows the feature set to be restricted to the highest contributing features. This study compares between the accuracies of different classifiers with and without the use of feature selection.
+%references
+\chapter{Classification}
+\label{chap:Classification}
+
+\section{Standard Classifiers}
+\label{sec:StandardClassifiers}
+For classification of the selected features, three standard classifiers were used: linear discriminant analysis (LDA), k nearest neighbours (KNN) and neural networks. These classifiers have been used in many works relating to EEG classification and are described below:\\
+\\
+\textbf{LDA} The LDA is a statistical method that was introduced by RA Fisher\cite{fisher1936use}. When applied to a binary classification problems (containing two classes), the means of both classes, $\mu_1$ and $\mu_2$, and the covariances, $\sum_1$ and $\sum_2$, are calculated from the training set. The mean and covariance of each class serves as representation of that class. The LDA makes the assumptions that both classes are normally distrbuted, and that both variances are equal ($\sum_1 = \sum_2 = \sum$). With that the decision function for class 1 becomes 
+$$\vec{w} \cdot \vec{x} > T $$
+Where $\vec{x}$ is a feature vector, $T$ is a constant threshold and 
+$$\vec{w} \propto \sum^{-1}(\mu_1 - \mu_2)$$
+LDA can be applied to classification problems with more than 2 classes using the 1-vs.-all method\cite{hunterberger2003brain}.\\
+\\
+\textbf{KNN} This algorithm uses a form of majorty vote to form a decision regarding classification. To classify a feature vector $\vec{x}$, a set of the K closest vecters is created and $\vec{x}$ is assigned to the most occuring class in the set. The determination of the closest vectors can be done using several distance metrices. The most commonly used distance measure is the mahalanobis distance which, for two vectors $\vec{x}$ and $\vec{y}$, is equal to
+$$d^2 = (\vec{x} - \vec{y})\sum^{-1}(\vec{x} - \vec{y})^{T}$$
+Where $\sum$ us the covariance matrix. KNN has the advantage of non linear decision boundary as it can approximate any function, providing K is large enough. It benefits the most from feature selection as it is highly susceptible to the curse of dimensioniality\cite{lotte2007review}.\\
+\\
+\textbf{Neural Networks} Neural Networks are a technique of classification that simulate the brain neurons. They are formed of several connected nodes, where each connection has a weight. The input nodes recieve the values of the feature vector, normalize them between 0 and 1 and then passes them to the next connected nodes. The values are mulitplied by the conneciton weight before the process is repeated at the next node. Information propagate through the network using the same way until it reaches the output nodes. The output nodes produce the final values that determine the decision of the network. Neural network are known as universal approximators for their ability to approximate any function. This makes them somewhat sensitive to noise. Despite that, neural networks have been shown to be a very efficient classification technique and have been used in many BCI implementations.\\
+\\
+
+\section{Gaussian Classifer}
+\label{sec:GaussianClassifier}
+
+\subsection{Classifier Implementation}
+The gaussian classifier is the fouth classifier implemented to compare its performance with the other standard classifiers in EEG recognition. This classifier was developed specifically for use in brain computer interfaces for EEG classification. It was introduced in the work of Mill\'{a}n et al. (2000)\cite{millan2000local}. It was termed a ``a local neural classifier''. While its correct recognition rate can be outdone by other more standard classifiers, it holds two advantages that makes more appropiate to online classifiaction. First, it has very small resolution time (half a second) which can be essential for the classication of a continuous stream of data. Second, the classifier has a lower wrong response rate than most other classifiers which can be important if the cost of recovery from a wrong classification is much higher than the cost of rejecting an uncertain sample. It is worth mentioning that this advantage is more prominant in application of EEG based control than in EEG based emotional recognition.
+
+For $N_k$ class classification problem, the algorithm for the gaussian classifier starts by calculating the initial mean $\mu_k$ and covariance matrix $\sum_k$ of each class $C_k$ using the maximum likelihood approach
+\begin{equation} \label{eq:mean}
+	\mu_k = \frac{1}{N_k}\sum_{n=1}^{N_k}x^n
+\end{equation}
+\begin{equation} \label{eq:cov}
+	\sum_k = \frac{1}{N_k}\sum_{n=1}^{N_k}(x^n - \mu_k)(x^n - \mu_k)^T
+\end{equation}
+With the asummption that each class has an independent normal distribution and using the values calculated above, the discriminant function for the classifier becomes
+\begin{equation} \label{eq:yk}
+	y_k(x) = \frac{-1}{2}(x - \mu_k)^T\sum_k^{-1}(x-\mu_k)-\frac{1}{2}ln|\sum_k|+lnP(C_k)
+\end{equation}
+Where $P(C_k)$ is the prior probability of class $C_k$. Here, the classes are considered to have equal probability of $\frac{1}{N_k}$. The discriminant function follows from the Bayesian rule
+$$y_k(x) = P(C_k|x) = \frac{p(x|C_k)P(C_k)}{p(x)}$$
+after dropping constant terms.
+
+Practically, what this means is that the mean $\mu_k$ and covariance $\sum_k$ form a prototype for class $C_k$. During classification the sample $x$ is assiened to the closest prototype which is determined based on the mahalanobis distance. During training the values of $\mu_K$ and $\sum_k$ are optimized iteratively using gradient descent to minimize the mean square error function. With the additional assumption of diagonal covariance matrices, the update function of $\mu_k$ for each feature vector $x^n$ becomes
+\begin{equation} \label{eq:deltamu}
+	\Delta \mu_k = \alpha[t_k(x^n)-y_k(x^n)]\sum_k^{-1}(x^n-\mu_k)y_k(x^n)y_j(x^n)
+\end{equation}
+Where $t_k$ is the $K^{th}$ componenet of the target vector of the form 1-of-c, $yk$ is the probability of class $C_k$ calculated using \ref{eq:yk} and $y_j$ the probability of other classes. The values of the covariance matrices are reevaluated using \ref{eq:cov} after every full iteration over the training set.
+
+\subsection{Shrunken Covariance}
+A complication that arises from the large dimensioniality of the feature vector, is the accuracy of covariance matrix estimation. With the number of features much greater than the number of samples in the dataset, calculated covariance matrix tend to be singular. The problem with a singular covariance matrix is that the inverse $\sum^{-1}$, which is required by for the calculation of yk given by \ref{eq:yk}, does not exist. The solution that was implemented is the shrunken covariance matrix. The concept of a shrunken covariance matrix reduces the estimation errors by pushing the matrix towards a more structured matrix, the target matrix, whose diagonal elements are the sample variances\cite{disatnik2007shrinking}. The advantage of the target matrix is that it is graunteed to be non singular (invertible), however, it can be a much worse estimation for the covariance matrix than the maximum likelihood estimation. For covariance matrix $S$, the shrunk covariance matrix $\sum_{shrunk}$ is
+\begin{equation}
+	\label{eq:shrunkcov}
+	\sum_{shrunk} = \delta F + (1 - \delta)S
+\end{equation}
+Where $F$ is the target matrix and $\delta$ is a number between 0 and 1 called the shrinkage factor. The shrinkage factor effectivily determins the contributions of the maximum likelihood estimation matrix $S$ and the target matrix $F$ to the final covariance matrix $\sum_{shrunk}$. The shrinkage factor here is empirically determinded to be 0.2. The elements of the target matrix $F$ can be calculated by 
+\begin{equation}
+	\label{eq:f}
+	f_{ii} = s_ii
+	f_{ij} = \bar{r}\sqrt{s_{ii}s_{jj}}
+\end{equation}
+and $\bar{r}$ is the sample correlation given by
+\begin{equation}
+	\label{rbar}
+	\bar{r} = \frac{2}{(N - 1)N}\sum^{N-1}_{i=1}\sum^{N}_{j=i+1}\frac{s_{ij}}{\sqrt{s_{ii}s_{jj}}}
+\end{equation}
+N is the number of samples in the dataset\cite{ledoit2004honey}.
+
+\chapter{Experimentation and Results}
+\label{chap:results}
+
+\section{Setup}
+\label{sec:setup}
+Throughout the course of this study, two classification experiments were carried out in order to compare the performance of different classifiers and procedures on EEG signals. The setup of the two expermints closely resemples that which is used in \cite{koelstra2012deap}. Specifically, the first experiment follows the exact same procedure, while using different classifiers, to allow comparison of the produced results with the results reported in their work. To prepare for the experminets the signals are split into one minute segments, representing the recording of an EEG signal from a single subject while watch in one musical video. This gives 40 segments for each of the 32 subjects makeing a total of 1280 segments. Each segment is considered a single sample in the dataset. Classification of a sample in this context indicates the overall emotion of the subject during a single musical video. This is preferable to the more common practice of using one second segments, as it provides a more meaningful classification rather than just indicate the fluctuations of the  emotional state. Both experiments include three binary classification problems: arousal, valence and liking. Each sample in the dataset is classified into the three categories as either high or low. Since the DEAP dataset provides numerical values between 0 and 9 for the threecategories, values higher than 4.5 are considered high.
+
+\section{Experiment One}
+\label{sec:exp1}
+The first experiment is a standard classification experiment. The EEG samples from each of the 32 subjects is treated as a single training corpus. The four classifiers are then applied to the corpus for each of the three classification problems. The resulting correct classification and percentage accuracy is recorded. This procedure is then repeated for the 32 subjects, and the average accuracy of the four classifiers overall is calculated. This showcases the expected performance of each classifier when integerated into real life applications. The procedure of this experiment matches the single trial classification experiment carried out in \cite{koelstra2012deap} using a na\"{\i}ve bayes classifier. This is why the results reported in their work was included in the comparison of the results reported here. Only results that made use of feature selection were reported in their study.
+
+\begin{table}[!h]
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline \hline
+		Emotion					& LDA	  & KNN	    & MLP     & Gaussian & NB      \\
+		\hline \hline
+		Arousal (without feature selection)	& 53.77\% & 58.30\% & 59.66\% & 57.62\%  & n/a     \\ \hline
+		Arousal (with feature selection)        & 48.19\% & 50.66\% & 54.90\% & 50.00\%  & 62.00\% \\ \hline
+		\hline
+		Valence (without feature selection)     & 51.62\% & 56.24\% & 55.90\% & 52.99\%  & n/a     \\ \hline
+		Valence (with feature selection)	& 49.46\% & 51.29\% & 54.50\% & 50.00\%	 & 57.00\% \\ \hline
+		\hline
+		Liking  (without feature selection)	& 51.03\% & 56.85\% & 60.36\% & 53.93\%  & n/a     \\ \hline
+		Liking  (with feature seleciton)	& 49.46\% & 51.29\% & 54.50\% & 50.00\%  & 55.40\% \\ \hline
+		\hline
+	\end{tabular}
+	\caption{Averages of correct classification percentages for experiment one}
+	\label{table:exp1}
+\end{table}
+
+\section{Experiment Two}
+\label{sec:exp2}
+One of the recurring problems in EEG classification is the sharp variation between different samples, which can greatly reduce the generalizability of results. This is not only true for data from different subjects, but also applies for data from the same subject that was acquired in different recording sessions. This has made it a standard practice to use classifier systems that are optimized for specific individuals. This may have had its uses in an academic eniveronment, despite the added cost to calibration times and reproducability. However, all attempts of applying such techniques to practical commercial applications remain highly inlikely without the development of more general solutions. To that end, this experiment was designed to compare the robustness of different classifiers, and to test the generalizablitiy of their accuracies. The experiment uses the data of all 32 subjects as a single training corpus, with no indication of the different sources. The four classifiers are applied to the corbus in the same way as the previous experiment, for the three emotions with and without using feature selection.
+
+\begin{table}[!h]
+	\begin{tabular}{| c | c | c | c | c |}
+		\hline \hline
+		Emotion 				& LDA     & KNN     & MLP     & Gaussian \\
+		\hline \hline
+		Arousal (without feature selection)     & 50.56\% & 57.65\% & 57.10\% & 57.38\%  \\ \hline
+		Arousal (with feature selection)	& 61.49\% & 58.09\% & 59.31\% & 56.86\%  \\ \hline
+		\hline
+		Valence (without feature selection)	& 48.89\% & 60.89\% & 56.84\% & 55.13\%  \\ \hline
+		Valence (with feature selection)   	& 54.38\% & 59.78\% & 54.96\% & 55.75\%  \\ \hline
+		\hline
+		Liking  (without feature selection) 	& 48.95\% & 54.20\% & 52.49\% & 52.60\%  \\ \hline
+		Liking  (with feature selection)     	& 50.57\% & 57.29\% & 53.11\% & 52.75\%  \\ \hline
+		\hline
+	\end{tabular}
+	\caption{Percentages of correct classifications for experiment two.}
+	\label{table:exp2}
+\end{table}
+
+Table \ref{table:exp2} summarizes the results optained from experiment two. 
+% comment on results` compare with results of first experiment 
+\chapter{Summary}
+%future recommendations: SVMs are fast, real time application
 %******************************************************************************
 % BIBLIOGRAPHY
 %******************************************************************************
@@ -217,9 +414,10 @@ Be sure that each pseudocode listing is listed in the list of algorithms at the 
 %******************************************************************************
 \appendix
 \appendixpage*
+
 \chapter{First Appendix}
 \label{app:FirstAppendix}
-This is the place where the appendices are supposed to be. Appendices are everything that would just blow up your thesis but are still of some interrest for a reader that wants to get a deeper grasp on the details of your work.
+This is the place where the appendices are supposed to be. Appendices are everything that would just blow up your thesis but are still of some interrest for a reader that wants to get a deeper grasp on the details of your work. 
 
 %******************************************************************************
 % BACK MATTER
@@ -275,4 +473,5 @@ This is the place where the appendices are supposed to be. Appendices are everyt
 %******************************************************************************
 % END DOCUMENT
 %******************************************************************************
+\end{document}
 \end{document}

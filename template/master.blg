@@ -1,3 +1,54 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: master.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/Arch Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: master.aux
 The style file: plain.bst
 Database file #1: master.bib
+Repeated entry---line 149 of file master.bib
+ : @article{koelstra2012deap
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "soleymani2008bayesian"
+Warning--I didn't find a database entry for "stoica2005spectra"
+Warning--I didn't find a database entry for "hunterberger2003brain"
+You've used 14 entries,
+            2118 wiz_defined-function locations,
+            587 strings with 6568 characters,
+and the built_in function-call counts, 5443 in all, are:
+= -- 549
+> -- 263
+< -- 5
++ -- 107
+- -- 90
+* -- 395
+:= -- 881
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 86
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 200
+empty$ -- 409
+format.name$ -- 90
+if$ -- 1144
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 13
+newline$ -- 72
+num.names$ -- 28
+pop$ -- 84
+preamble$ -- 1
+purify$ -- 72
+quote$ -- 0
+skip$ -- 155
+stack$ -- 0
+substring$ -- 367
+swap$ -- 56
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 0
+while$ -- 56
+width$ -- 16
+write$ -- 157
+(There was 1 error message)

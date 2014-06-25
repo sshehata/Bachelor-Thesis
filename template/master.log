@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.5.8)  12 MAY 2014 17:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.5.8)  24 JUN 2014 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,29 +983,29 @@ Package color Info: Redefining color white on input line 225.
 ) (./master.aux)
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 12.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1027,7 +1027,7 @@ e
 ))
 \c@lstlisting=\count196
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 12.
+Package hyperref Info: Link coloring ON on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1039,10 +1039,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 12.
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
 (./master.out) (./master.out)
 \@outlinefile=\write7
 \openout7 = `master.out'.
@@ -1050,22 +1050,22 @@ LaTeX Info: Redefining \nameref on input line 12.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <logo.png, id=62, 602.25pt
- x 591.20876pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <logo.png, id=134, 602.25p
+t x 591.20876pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 41.
+Package pdftex.def Info: logo.png used on input line 43.
 (pdftex.def)             Requested size: 95.75pt x 93.9909pt.
  [2
 
  <./logo.png>]
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 86.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 88.
 
-(/usr/share/texmf-dist/tex/latex/lm/ot1lmss.fd
+ (/usr/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 86.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 88.
  [3
 
 ] [4
@@ -1096,35 +1096,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+stmry on input line 3.
 
-(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd))pdfTeX warning (ext4): des
-tination with the same identifier (name{page.i}) has been already used, duplica
-te ignored
+(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)pdfTeX warning (ext4): dest
+ination with the same identifier (name{page.i}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
-l.146 
-       [1]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.ii}) has been already used, duplicate ignored
+l.27 ...line {6.2}Experiment One}{20}{section.6.2}
+                                                   [1])pdfTeX warning (ext4): d
+estination with the same identifier (name{page.ii}) has been already used, dupl
+icate ignored
 <to be read again> 
                    \relax 
-l.146 
-       [2
+l.149 
+       [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [1
+ [1
 
-] [2
 
-] <enten.jpg, id=141, 284.5029pt x 204.5241pt>
-File: enten.jpg Graphic file (type jpg)
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use enten.jpg>
-Package pdftex.def Info: enten.jpg used on input line 170.
-(pdftex.def)             Requested size: 306.40117pt x 220.26791pt.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 180
+ [2]
+[3] [4
+
+] [5]
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 189
 .
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 180
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 189
 .
 
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
@@ -1133,26 +1135,123 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Missing character: There is no — in font ts1-lmtt12!
 Missing character: There is no — in font ts1-lmtt12!
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 182.
+put line 191.
 
-Underfull \vbox (badness 2856) has occurred while \output is active []
 
- [3 <./enten.jpg>] (./master.bbl [4]
-bibitemlist
-) [5
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-] [6
-
-] [7] [8] [9
-
-] [10
-
-] (./master.lof) [11
-
-] (./master.lot) [12
+[6] [7] [8
 
 ]
-(./master.loa) [13
+CiteRef Warning: Citation `soleymani2008bayesian' on page 9 undefined.
+[9] <pic.png, id=288, 56.00925pt x 55.407pt>
+File: pic.png Graphic file (type png)
+ <use pic.png>
+Package pdftex.def Info: pic.png used on input line 233.
+(pdftex.def)             Requested size: 229.80234pt x 227.36792pt.
+ [10 <./pic.png>]
+Underfull \vbox (badness 4217) has occurred while \output is active []
+
+ [11
+
+]
+CiteRef Warning: Citation `stoica2005spectra' on page 12 undefined.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
+
+ []
+
+CiteRef Warning: Citation `hunterberger2003brain' on page 15 undefined.
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--297
+
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
+
+ []
+
+[16] [17] [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19
+
+]
+Overfull \hbox (64.22081pt too wide) in paragraph at lines 361--375
+[][] 
+ []
+
+[20]
+Overfull \hbox (15.26488pt too wide) in paragraph at lines 384--398
+[][] 
+ []
+
+[21] [22
+
+] (./master.bbl [23] [24
+
+]
+bibitemlist
+[25]) [26] [27
+
+] [28] [29
+
+] [30
+
+] (./master.lof) [31
+
+] (./master.lot) [32
+
+]
+(./master.loa) [33
 
 
 ]
@@ -1168,43 +1267,53 @@ bibitemlist
 \tf@loa=\write11
 \openout11 = `master.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 570DAD7083506968EDF5392327436D24;1607.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
+(rerunfilecheck)             Checksum: 412246B735129CD6375AE8E165A270C2;4852.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
  ) 
 Here is how much of TeX's memory you used:
- 17828 strings out of 493308
- 245595 string characters out of 6143617
- 330329 words of memory out of 5000000
- 20974 multiletter control sequences out of 15000+600000
- 92305 words of font info for 77 fonts, out of 8000000 for 9000
+ 18037 strings out of 493308
+ 248701 string characters out of 6143617
+ 334754 words of memory out of 5000000
+ 21098 multiletter control sequences out of 15000+600000
+ 109602 words of font info for 110 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,32p,1770b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,32p,1770b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fo
-nts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/
-lm-rmsc.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr
-/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf-dist
-/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/share/texmf-dist/fonts/enc/dvips/
-lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/sh
-are/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm
-/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1
-/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></u
-sr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts
-/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10
-.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texm
-f-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (25 pages, 921841 bytes).
+nts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/
+MnSymbolC.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/u
+sr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/share/texmf-di
+st/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/share/texmf-dist/fonts/enc/dvip
+s/mnsymbol/MnSymbolA.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/share/texmf-dist/fo
+nts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/mnsymbol/MnSymbol6.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/M
+nSymbol7.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/f
+onts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/l
+mmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/te
+xmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></
+usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/font
+s/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro1
+0.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb>
+Output written on master.pdf (45 pages, 494018 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
