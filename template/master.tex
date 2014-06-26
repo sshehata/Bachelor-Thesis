@@ -173,47 +173,20 @@ This study is divided into six chapters: introduction, dataset and preprocessing
 
 \section{Electroencephalography}
 \label{sec:Electroencephalography}
+
+\subsection{History}
 The discovery of electroencephalography was first made in 1875 by english physician, Richard Caton, who reported measuring what he described as ``feeble currents of varying directions'' from the exposed brains of rats and monkeys. The non-invasive procedure was then introduced by Hans Berger, a german neurologist, in 1924 who used ordinary radio equipement to amplify electrical activity produced by the brain on the human scalp. He used a strip of paper to show that EEG can be visually inspected without the need to open the skull.
 
+\subsection{Technical Details}
 Potential Difference is formed in brain neurons with the flow of Ca$^{++}$, K$^{+}$, Na$^{+}$ and Cl$^{-}$ -ions through membrane channels. The potential difference can either exceed a threshold making it an action potential or be subthreshold as postsynaptic potentials (PSPs). Action potentials are spike shaped with duration of 1 ms that when responding to stimuli that exceed a certain threshold, causes the neuron to fire. When action potentials reach a synapse, a connection between the firing neuron and other neurons, it forms a PSP with amplitude relative to the excitation of the input neuron. PSPs have typical amplitudes ranging from 5-10mV and spans between 10 and 50 ms. These potentials propagate throughout the brain neurons in same way. When that number of firing neurons causes a large enough PSP, extracranial electric field is formed. The contribution of action potentials to this field is negligible. The superimposiotion of postsynaptic potentials detected is known as EEG.
 
 EEG is recorded by means of conductive electrodes placed on the scalp. Conductive paste and low resistance electrode can be used to boost recording quality. The need to interpet single recordings well as compare results call for standardized placement of electrods. In 1958, a standard for electrode placement was introduced, called 10-20 electrode placement system. Using propertional distance from skull landmarks, the 10-20 system provides adequate coverage of the entire scalp. The name 10-20 stands for the percentage of distance between the ears and nose where electrode positions where chosen. Each electrode position is given a label based on the closest brain area: (F)rontal, (C)entral, (T)emporal, (P)osterior and (O)ccipital. On the left side of the brain, from the subjects perspective, labels are accompanied by an odd number and an even number on the right side.
 
+\subsection{Applications}
 The dedicated research effort behind EEG measurement is motivated by the very wide spectrum of applications it offers. EEG holds an advantage over other brain monitering techinques which is speed, since it allows the recording of a stimuli reponse withen fractions of a second of its occurance. Clinical applications include anaethesia, testing for drug effects, examining the brain for tumers or strokes and monitering patients with coma or brain death. Certain variation of EEG signals can be used for specific applications. For example, evoked potentials can be used for cognitive related studies. Quantitative electronecephalography, the use of multi channel measurements of EEG, is typically used for topographics brain mappings. A popular application which has gained attention recently is Brain Computer Interfaces (BCI), which are computer interfaces designed to translate EEG signal of a user into a single command from a preprogrammed set. This allows users with no little or no mobility, such as patients with neck-down-paralysis, to control daily objects with nothing but brain commands.
 
 \section{Affective Computing}
 \label{sec:Affective}
-
-\subsection{PseudoCode}
-\label{sec:PseudoCode}
-If you want to show the implementation of some algorithm that is essential to the solution found in your thesis then do not write plain prgoram code. Use an abstract pseudocode representation instead. No one wants to see \texttt{C++\texttrademark} code or \texttt{Java\texttrademark} code in your thesis because it is presumed that you are able so write such a program as a computer scientist. Generally, writing program code is bad style and just blows up your thesis but will never be read by anyone but you. It is nothing scientific but your handwork while your thesis should show that you are able to do research as a scientist. A pseudocode example could look like the following:
-\begin{algorithm}[h]
-\caption{The Dekker Algorithm}
-\label{algo:dekker}
-\begin{algorithmic}
-\Require $n \in \mathbb{N}$
-\Require $0 \leq i,turn \leq n$
-\Require $\forall 0 \leq j \leq n : (interrested[j] = false)$
-\Procedure{DekkerAlgorithm}{$n,i$}
-  \State $interrested[i] \leftarrow true$
-  \While {$\exists 0 \leq j \leq n : (j \neq i \wedge interrested[j] = true)$}
-  \If {$turn \neq i$}
-    \State $interrested[i] \leftarrow false$
-    \While {$turn \neq i$}
-    \EndWhile
-    \State $interrested[i] \leftarrow true$
-  \EndIf 
-  \EndWhile
-  \State $ $
-  \State $\text{\textbf{\color{red}CRITICAL SECTION}}$
-  \State $ $
-  \State $turn \leftarrow Random(n)$
-  \State $interrested[i] \leftarrow false$
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-
-Be sure that each pseudocode listing is listed in the list of algorithms at the end of your thesis.
 
 
 \chapter{Data Used}
@@ -278,8 +251,8 @@ Other than the power spectral density, spectral asymmetry was also used as featu
 
 \section{Feature Selection}
 \label{sec:FeatureSelection}
-Following feature extraction, feature selection is applied. Feature selection is the process of selecting a subset of the available features to be actually used in classification. There are several benefits to feature selection. First, it can eliminate noisy features which merely confuse the classifier. It can improve the efficency of classification by reducing storage space and training time.It can also remove features that non discriminative between classes making them ineffectual to classification. Feature selection can greatly reduce the effect of the curse of dimensioniality. This can be very important in EEG classification due to the normally small datasets. Many algorithms exist for feature selection. The method used here is called the Analysis of Variance (ANOVA). This a statistical method commonly used to investigate the relations between a sample and the data. Here, it shows the contribution of each feature to the overall variance of the data. This allows the feature set to be restricted to the highest contributing features. This study compares between the accuracies of different classifiers with and without the use of feature selection.
-%references
+Following feature extraction, feature selection is applied. Feature selection is the process of selecting a subset of the available features to be actually used in classification. There are several benefits to feature selection. First, it can eliminate noisy features which merely confuse the classifier. It can improve the efficency of classification by reducing storage space and training time.It can also remove features that non discriminative between classes making them ineffectual to classification. Feature selection can greatly reduce the effect of the curse of dimensioniality. This can be very important in EEG classification due to the normally small datasets. Many algorithms exist for feature selection. The method used here is called the Analysis of Variance (ANOVA). This a statistical method commonly used to investigate the relations between a sample and the data. Here, it shows the contribution of each feature to the overall variance of the data. This allows the feature set to be restricted to the highest contributing features. This study compares between the accuracies of different classifiers with and without the use of feature selection\cite{guyon2003introduction}.
+%reference
 \chapter{Classification}
 \label{chap:Classification}
 
@@ -355,26 +328,28 @@ Throughout the course of this study, two classification experiments were carried
 
 \section{Experiment One}
 \label{sec:exp1}
-The first experiment is a standard classification experiment. The EEG samples from each of the 32 subjects is treated as a single training corpus. The four classifiers are then applied to the corpus for each of the three classification problems. The resulting correct classification and percentage accuracy is recorded. This procedure is then repeated for the 32 subjects, and the average accuracy of the four classifiers overall is calculated. This showcases the expected performance of each classifier when integerated into real life applications. The procedure of this experiment matches the single trial classification experiment carried out in \cite{koelstra2012deap} using a na\"{\i}ve bayes classifier. This is why the results reported in their work was included in the comparison of the results reported here. Only results that made use of feature selection were reported in their study.
+The first experiment is a standard classification experiment. The EEG samples from each of the 32 subjects is treated as a single training corpus. The four classifiers are then applied to the corpus for each of the three classification problems. The resulting correct classification and percentage accuracy is recorded. This procedure is then repeated for the 32 subjects, and the average accuracy of the four classifiers overall is calculated. The validation theme used is the leave-one-out method, where one sample of the dataset is used as the testing sample and the rest as the training set. Validation is repeated until all samples are used as a testing set once, and the average test result is reported. This showcases the expected performance of each classifier when integerated into real life applications. The procedure of this experiment matches the single trial classification experiment carried out in \cite{koelstra2012deap} using a na\"{\i}ve bayes classifier. This is why the results reported in their work was included in the comparison of the results reported here. Only results that made use of feature selection were reported in their study.
 
 \begin{table}[!h]
 	\begin{tabular}{| c | c | c | c | c | c |}
 		\hline \hline
 		Emotion					& LDA	  & KNN	    & MLP     & Gaussian & NB      \\
 		\hline \hline
-		Arousal (without feature selection)	& 53.77\% & 58.30\% & 59.66\% & 57.62\%  & n/a     \\ \hline
-		Arousal (with feature selection)        & 48.19\% & 50.66\% & 54.90\% & 50.00\%  & 62.00\% \\ \hline
+		Arousal (without feature selection)	& 55.59\% & 59.25\% & 59.61\% & 56.44\%  & n/a     \\ \hline
+		Arousal (with feature selection)        & 50.61\% & 51.72\% & 54.44\% & 50.00\%  & 62.00\% \\ \hline
 		\hline
-		Valence (without feature selection)     & 51.62\% & 56.24\% & 55.90\% & 52.99\%  & n/a     \\ \hline
-		Valence (with feature selection)	& 49.46\% & 51.29\% & 54.50\% & 50.00\%	 & 57.00\% \\ \hline
+		Valence (without feature selection)     & 55.15\% & 64.48\% & 60.75\% & 57.86\%  & n/a     \\ \hline
+		Valence (with feature selection)	& 49.77\% & 57.25\% & 60.29\% & 50.00\%	 & 57.00\% \\ \hline
 		\hline
-		Liking  (without feature selection)	& 51.03\% & 56.85\% & 60.36\% & 53.93\%  & n/a     \\ \hline
-		Liking  (with feature seleciton)	& 49.46\% & 51.29\% & 54.50\% & 50.00\%  & 55.40\% \\ \hline
+		Liking  (without feature selection)	& 54.24\% & 56.85\% & 59.57\% & 57.27\%  & n/a     \\ \hline
+		Liking  (with feature seleciton)	& 49.77\% & 57.25\% & 60.29\% & 50.00\%  & 55.40\% \\ \hline
 		\hline
 	\end{tabular}
 	\caption{Averages of correct classification percentages for experiment one}
 	\label{table:exp1}
 \end{table}
+
+Table \ref{table:exp1} shows the averages of performance of the four classifiers over the 32 subjects. The na\"{\i}ve bayes classifier results are taken directly from \cite{koelstra2012deap}. The percentages are the ratio of correct classifications to the total classifications attempted. The results allow for comparisons between performances. While it can not be claimed that one classifier is completely superiour to the others, it can be seen that the MLP has a relativly consistent high performance which can be attributed to its ability to approximate any function. This gives MLP an advantage in noisy data such as the EEG signals. It is also worth noting that not all classifiers benefit from adding feature selection, and in some other cases the improvement is not worth the added time complexity.
 
 \section{Experiment Two}
 \label{sec:exp2}
@@ -399,7 +374,7 @@ One of the recurring problems in EEG classification is the sharp variation betwe
 	\label{table:exp2}
 \end{table}
 
-Table \ref{table:exp2} summarizes the results optained from experiment two. 
+Table \ref{table:exp2} summarizes the results optained from experiment two. As expected, the classifiers experience a drop in performance, when compared with experiment one, as the models require fitting to more noisy data with more steep variations. The kNN classifier shows a much reduced performance due to its sensitivity to noise and overfitting. It can be claimed that the MLP classifier shows a performance consistent with the previous experiment relative to the other classifiers. The gaussian classifier shows almost the same performance as in experiment one which can be attributed to the larger size of the dataset. This, in the gaussian classifier case, can balance out the reduction in performance resulting from the more varied patterns. 
 % comment on results` compare with results of first experiment 
 \chapter{Summary}
 %future recommendations: SVMs are fast, real time application
