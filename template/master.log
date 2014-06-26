@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.5.8)  26 JUN 2014 01:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.5.8)  27 JUN 2014 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,11 +1216,15 @@ Overfull \hbox (15.26488pt too wide) in paragraph at lines 359--373
 
 [19] [20
 
-] (./master.bbl [21] [22
+] (./master.bbl
+Underfull \vbox (badness 1642) has occurred while \output is active []
 
-]
+ [21]
+[22]
 bibitemlist
-[23]) [24] [25
+[23
+
+]) [24] [25
 
 ] [26] [27
 
@@ -1247,18 +1251,18 @@ bibitemlist
 \tf@loa=\write11
 \openout11 = `master.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 451.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 451.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 451.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 451.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: 587CEF92F137ABE91BC0A32A191EDD78;5175.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 451.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 456.
  ) 
 Here is how much of TeX's memory you used:
  17925 strings out of 493308
@@ -1285,10 +1289,10 @@ t/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/l
 mr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf
 -dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on master.pdf (43 pages, 449521 bytes).
+Output written on master.pdf (43 pages, 452427 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
+ 536 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
  108 named destinations out of 1000 (max. 500000)
  275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
