@@ -8,47 +8,46 @@ Repeated entry---line 149 of file master.bib
  :                          ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "soleymani2008bayesian"
-Warning--I didn't find a database entry for "stoica2005spectra"
 Warning--I didn't find a database entry for "hunterberger2003brain"
-You've used 15 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            593 strings with 6737 characters,
-and the built_in function-call counts, 5791 in all, are:
-= -- 586
-> -- 276
+            596 strings with 6845 characters,
+and the built_in function-call counts, 6042 in all, are:
+= -- 608
+> -- 289
 < -- 5
-+ -- 113
-- -- 94
-* -- 420
-:= -- 938
-add.period$ -- 47
-call.type$ -- 15
-change.case$ -- 91
++ -- 118
+- -- 98
+* -- 432
+:= -- 982
+add.period$ -- 50
+call.type$ -- 16
+change.case$ -- 95
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 211
-empty$ -- 437
-format.name$ -- 94
-if$ -- 1215
+cite$ -- 16
+duplicate$ -- 223
+empty$ -- 459
+format.name$ -- 98
+if$ -- 1268
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 14
-newline$ -- 77
-num.names$ -- 30
-pop$ -- 87
+int.to.str$ -- 16
+missing$ -- 16
+newline$ -- 82
+num.names$ -- 32
+pop$ -- 96
 preamble$ -- 1
-purify$ -- 76
+purify$ -- 80
 quote$ -- 0
-skip$ -- 163
+skip$ -- 170
 stack$ -- 0
-substring$ -- 404
-swap$ -- 57
+substring$ -- 409
+swap$ -- 58
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 62
 warning$ -- 0
-while$ -- 60
-width$ -- 17
-write$ -- 168
+while$ -- 62
+width$ -- 18
+write$ -- 178
 (There was 1 error message)

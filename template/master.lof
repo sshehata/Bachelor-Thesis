@@ -1,9 +1,19 @@
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Raw EEG signal, 1 second recording}}{5}{figure.2.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The 10/20 placement of electrodes from the DEAP dataset}}{8}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The 10/20 placement of electrodes from the DEAP dataset}}{10}{figure.3.1}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Delta wave, 1 second recording.}}{14}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Theta wave, 1 second recording.}}{14}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Alpha wave, 1 second recording.}}{14}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Beta wave, 1 second recording.}}{14}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gamma wave, 1 second recording.}}{14}{figure.4.5}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Final version of the AuBT toolbox}}{31}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Preprocessing area of the GUI}}{32}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Feature selection with newly added support for EEG signals}}{32}{figure.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Newly added Gaussian classifier}}{32}{figure.A.4}
