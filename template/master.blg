@@ -7,47 +7,46 @@ Repeated entry---line 149 of file master.bib
  : @article{koelstra2012deap
  :                          ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "soleymani2008bayesian"
 Warning--I didn't find a database entry for "hunterberger2003brain"
-You've used 16 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            596 strings with 6845 characters,
-and the built_in function-call counts, 6042 in all, are:
-= -- 608
-> -- 289
-< -- 5
-+ -- 118
-- -- 98
-* -- 432
-:= -- 982
-add.period$ -- 50
-call.type$ -- 16
-change.case$ -- 95
+            606 strings with 7365 characters,
+and the built_in function-call counts, 6991 in all, are:
+= -- 708
+> -- 330
+< -- 7
++ -- 135
+- -- 112
+* -- 492
+:= -- 1122
+add.period$ -- 58
+call.type$ -- 18
+change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 223
-empty$ -- 459
-format.name$ -- 98
-if$ -- 1268
+cite$ -- 18
+duplicate$ -- 265
+empty$ -- 535
+format.name$ -- 112
+if$ -- 1485
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 16
-newline$ -- 82
-num.names$ -- 32
-pop$ -- 96
+int.to.str$ -- 18
+missing$ -- 18
+newline$ -- 92
+num.names$ -- 36
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 91
 quote$ -- 0
-skip$ -- 170
+skip$ -- 200
 stack$ -- 0
-substring$ -- 409
-swap$ -- 58
-text.length$ -- 5
+substring$ -- 468
+swap$ -- 76
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
+type$ -- 70
 warning$ -- 0
-while$ -- 62
-width$ -- 18
-write$ -- 178
+while$ -- 72
+width$ -- 20
+write$ -- 202
 (There was 1 error message)

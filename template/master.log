@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.5.8)  1 JUL 2014 21:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.5.8)  8 JUL 2014 03:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,7 +1050,7 @@ LaTeX Info: Redefining \nameref on input line 14.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <logo.png, id=146, 602.25p
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <logo.png, id=148, 602.25p
 t x 591.20876pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
@@ -1122,21 +1122,20 @@ Underfull \vbox (badness 3919) has occurred while \output is active []
 ]
 [2] [3] [4
 
-] <eeg.png, id=269, 86.724pt x 17.3448pt>
+] <eeg.png, id=271, 86.724pt x 17.3448pt>
 File: eeg.png Graphic file (type png)
  <use eeg.png>
 Package pdftex.def Info: eeg.png used on input line 183.
 (pdftex.def)             Requested size: 306.40117pt x 61.28355pt.
  [5 <./eeg.png>] [6] [7] [8
 
-]
-CiteRef Warning: Citation `soleymani2008bayesian' on page 9 undefined.
-[9] <pic.png, id=300, 56.00925pt x 55.407pt>
+] [9] <pic.png, id=305, 56.00925pt x 55.407pt>
 File: pic.png Graphic file (type png)
  <use pic.png>
 Package pdftex.def Info: pic.png used on input line 207.
 (pdftex.def)             Requested size: 229.80234pt x 227.36792pt.
- [10 <./pic.png>]
+
+[10 <./pic.png>]
 Underfull \vbox (badness 4217) has occurred while \output is active []
 
  [11
@@ -1180,31 +1179,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--250
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-<eeg_delta.png, id=338, 86.724pt x 17.3448pt>
+<eeg_delta.png, id=342, 86.724pt x 17.3448pt>
 File: eeg_delta.png Graphic file (type png)
  <use eeg_delta.png>
 Package pdftex.def Info: eeg_delta.png used on input line 253.
 (pdftex.def)             Requested size: 306.40117pt x 61.28355pt.
 
-<eeg_theta.png, id=339, 86.724pt x 17.3448pt>
+<eeg_theta.png, id=343, 86.724pt x 17.3448pt>
 File: eeg_theta.png Graphic file (type png)
  <use eeg_theta.png>
 Package pdftex.def Info: eeg_theta.png used on input line 259.
 (pdftex.def)             Requested size: 306.40117pt x 61.28355pt.
 
-<eeg_alpha.png, id=340, 86.724pt x 17.3448pt>
+<eeg_alpha.png, id=344, 86.724pt x 17.3448pt>
 File: eeg_alpha.png Graphic file (type png)
  <use eeg_alpha.png>
 Package pdftex.def Info: eeg_alpha.png used on input line 265.
 (pdftex.def)             Requested size: 306.40117pt x 61.28355pt.
 
-<eeg_beta.png, id=341, 86.724pt x 17.3448pt>
+<eeg_beta.png, id=345, 86.724pt x 17.3448pt>
 File: eeg_beta.png Graphic file (type png)
  <use eeg_beta.png>
 Package pdftex.def Info: eeg_beta.png used on input line 271.
 (pdftex.def)             Requested size: 306.40117pt x 61.28355pt.
 
-<eeg_gamma.png, id=342, 86.724pt x 17.3448pt>
+<eeg_gamma.png, id=346, 86.724pt x 17.3448pt>
 File: eeg_gamma.png Graphic file (type png)
  <use eeg_gamma.png>
 Package pdftex.def Info: eeg_gamma.png used on input line 277.
@@ -1253,25 +1252,28 @@ Overfull \hbox (15.26488pt too wide) in paragraph at lines 393--407
 [][] 
  []
 
-[23] [24
 
-]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23] [24]
 Underfull \vbox (badness 1127) has occurred while \output is active []
 
- [25]
+ [25
+
+]
 (./master.bbl [26]
 bibitemlist
 [27
 
 ]) [28] [29
 
-] [30] <aubt1.png, id=465, 867.24pt x 612.03656pt>
+] [30] <aubt1.png, id=470, 867.24pt x 612.03656pt>
 File: aubt1.png Graphic file (type png)
 
 <use aubt1.png>
 Package pdftex.def Info: aubt1.png used on input line 441.
 (pdftex.def)             Requested size: 229.80234pt x 162.17023pt.
- <aubt2.png, id=466, 769.37437pt x 126.4725pt>
+ <aubt2.png, id=471, 769.37437pt x 126.4725pt>
 File: aubt2.png Graphic file (type png)
  <use aubt2.png>
 Package pdftex.def Info: aubt2.png used on input line 449.
@@ -1280,14 +1282,14 @@ Package pdftex.def Info: aubt2.png used on input line 449.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<aubt3.png, id=467, 740.0147pt x 327.47343pt>
+<aubt3.png, id=472, 740.0147pt x 327.47343pt>
 File: aubt3.png Graphic file (type png)
  <use aubt3.png>
 Package pdftex.def Info: aubt3.png used on input line 457.
 (pdftex.def)             Requested size: 229.80234pt x 101.6906pt.
  [31
 
- <./aubt1.png>] <aubt4.png, id=474, 736.25063pt x 121.95563pt>
+ <./aubt1.png>] <aubt4.png, id=479, 736.25063pt x 121.95563pt>
 File: aubt4.png Graphic file (type png)
  <use aubt4.png>
 Package pdftex.def Info: aubt4.png used on input line 466.
@@ -1322,13 +1324,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 519.
  ) 
 Here is how much of TeX's memory you used:
- 17999 strings out of 493308
- 248022 string characters out of 6143617
- 336018 words of memory out of 5000000
- 21048 multiletter control sequences out of 15000+600000
+ 18004 strings out of 493308
+ 248160 string characters out of 6143617
+ 335118 words of memory out of 5000000
+ 21051 multiletter control sequences out of 15000+600000
  103180 words of font info for 115 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,13n,32p,1866b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,32p,1772b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fo
 nts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/
 lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/u
@@ -1346,10 +1348,10 @@ t/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/l
 mr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf
 -dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on master.pdf (46 pages, 718454 bytes).
+Output written on master.pdf (46 pages, 720950 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 124 named destinations out of 1000 (max. 500000)
+ 605 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
  333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

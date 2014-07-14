@@ -29,6 +29,13 @@ Isabelle Guyon and Andr{\'e} Elisseeff.
 \newblock An introduction to variable and feature selection.
 \newblock {\em The Journal of Machine Learning Research}, 3:1157--1182, 2003.
 
+\bibitem{hinterberger2003brain}
+Thilo Hinterberger, Andrea K{\"u}bler, Jochen Kaiser, Nicola Neumann, and Niels
+  Birbaumer.
+\newblock A brain--computer interface (bci) for the locked-in: comparison of
+  different eeg classifications for the thought translation device.
+\newblock {\em Clinical Neurophysiology}, 114(3):416--425, 2003.
+
 \bibitem{john1996digital}
 G~Proakis John and G~Manolakis Dimitris.
 \newblock Digital signal processing: Principles, algorithms and applications,
@@ -82,6 +89,11 @@ Mohammad Soleymani, JJM Kierkels, G~Chanel, and T~Pun.
   Workshops, 2009. ACII 2009. 3rd International Conference on}, pages 1--7.
   IEEE, 2009.
 
+\bibitem{vstastny2003eeg}
+Jakub {\v{S}}t'astn{\`y}, Pavel Sovka, and Andrej Stan{\v{c}}{\'a}k.
+\newblock Eeg signal classification: introduction to the problem.
+\newblock {\em Radioengineering}, 12(3):51--55, 2003.
+
 \bibitem{stoica2005spectral}
 Petre Stoica and Randolph~L Moses.
 \newblock {\em Spectral analysis of signals}.
@@ -97,12 +109,5 @@ Jianhua Tao and Tieniu Tan.
 Michal Teplan.
 \newblock Fundamentals of eeg measurement.
 \newblock {\em Measurement science review}, 2(2):1--11, 2002.
-
-\bibitem{wagner2005physiological}
-Johannes Wagner, Jonghwa Kim, and Elisabeth Andr{\'e}.
-\newblock From physiological signals to emotions: Implementing and comparing
-  selected methods for feature extraction and classification.
-\newblock In {\em Multimedia and Expo, 2005. ICME 2005. IEEE International
-  Conference on}, pages 940--943. IEEE, 2005.
 
 \end{thebibliography}
